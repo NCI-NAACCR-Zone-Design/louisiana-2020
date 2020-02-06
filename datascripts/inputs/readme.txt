@@ -1,6 +1,6 @@
 TERMS OF USE
 
-Use of [NAME OF WEBSITE] implies consent to abide by the terms of these data use restrictions. Any effort to determine the identity of any reported cases, or to use the information for any purpose other than for health statistical reporting and analysis, is against the law.
+Use of Louisiana Health Maps implies consent to abide by the terms of these data use restrictions. Any effort to determine the identity of any reported cases, or to use the information for any purpose other than for health statistical reporting and analysis, is against the law.
 
 Therefore users will:
 

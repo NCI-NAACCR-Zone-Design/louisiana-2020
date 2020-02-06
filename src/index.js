@@ -21,8 +21,7 @@ require('./printing-leaflet-easyPrint.js');
 
 // the map and some constants
 var MAP;
-var MAP_BBOX = [[32.092, -94.438], [33.146, -93.142]];  // [[s, w], [n, e]]
-
+var MAP_BBOX = [[28.973831,-94.271171] , [33.090894,-88.937309]];  // [[s, w], [n, e]]
 var MIN_ZOOM = 6;
 var MAX_ZOOM = 15;
 
@@ -71,7 +70,6 @@ var SEARCHOPTIONS_SEX = [  // filter values for "sex" field
     { value: 'Female', label: "Female" },
 ];
 var SEARCHOPTIONS_TIME = [  // filter values for "years" field
-    { value: '01yr', label: "1-Year: 2015" },
     { value: '05yrs', label: "5-Year: 2011-2015" },
     { value: '10yrs', label: "10-Year: 2006-2015" },
 ];
@@ -79,9 +77,6 @@ var SEARCHOPTIONS_RACE = [  // field prefix for AAIR, LCI, UCI fields within the
     { value: '', label: "All Ethnicities" },
     { value: 'W', label: "Non-Hispanic White" },
     { value: 'B', label: "Non-Hispanic Black" },
-    { value: 'H', label: "Hispanic" },
-    { value: 'API', label: "Asian/Pacific Islander" },
-    { value: 'AIAN', label: "American Indian/Alaska Native" },
 ];
 
 // if any of the cancer sites should apply to only one sex, you may define that here
@@ -121,9 +116,7 @@ var DEMOGRAPHIC_TABLES = [
         title: "Race & Ethnicity",
         rows: [
             { field: 'PctMinority', label: "% Minority", format: 'percent', tooltip_id: 'PctRace' },
-            { field: 'PctHispanic', label: "% Hispanic", format: 'percent', tooltip_id: 'PctRace' },
             { field: 'PctBlackNH', label: "% Black (non-Hispanic)", format: 'percent', tooltip_id: 'PctRace' },
-            { field: 'PctAPINH', label: "% Asian/Pacific (non-Hispanic)", format: 'percent', tooltip_id: 'PctRace' },
         ],
     },
 ];
