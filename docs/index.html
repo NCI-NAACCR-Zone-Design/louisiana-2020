@@ -55,8 +55,8 @@
     </script>
 
     <!-- our own awesomesauce -->
-    <link rel="stylesheet" type="text/css" href="index.css?Fri_Feb_07_2020_11_54_56_GMT_0800__Pacific_Standard_Time_" />
-    <script type="text/javascript" src="index.js?Fri_Feb_07_2020_11_54_56_GMT_0800__Pacific_Standard_Time_"></script>
+    <link rel="stylesheet" type="text/css" href="index.css?Fri_Feb_07_2020_15_46_44_GMT_0800__Pacific_Standard_Time_" />
+    <script type="text/javascript" src="index.js?Fri_Feb_07_2020_15_46_44_GMT_0800__Pacific_Standard_Time_"></script>
 </head>
 <body>
 
@@ -76,7 +76,7 @@
 
     <div class="container noprint">
         <p class="intro-text">
-            Louisiana Cancer Maps is an interactive mapping tool of cancer data for [REPLACE NUM_ZONES] cancer reporting zones in Louisiana. You can map cancer incidence for the [REPLACE NUM_CANCER_SITES] most common invasive cancer sites and filter by sex and race/ethnicity. <a href="#learn-text">Visit Learn</a> to review methodology, data sources, and more.
+            Louisiana Cancer Maps is an interactive mapping tool of cancer data for 71 cancer reporting zones in Louisiana. You can map cancer incidence for the 20 most common invasive cancer sites and filter by sex and race/ethnicity. <a href="#learn-text">Visit Learn</a> to review methodology, data sources, and more.
         </p>
     </div><!--/container section-->
 
@@ -223,7 +223,7 @@
         </div>
 
         <p class="small">
-          To ensure confidentiality and stable statistical rates, cancer incidence rates are not reported if based on fewer than [REPLACE REPORTING MIN CASES] cancer cases. Distributions of selected population demographic factors are also provided for each zone. These data are from the decennial U.S. Census or the Census’s American Community Survey.
+          To ensure confidentiality and stable statistical rates, cancer incidence rates are not reported if based on fewer than 16 cancer cases. Distributions of selected population demographic factors are also provided for each zone. These data are from the decennial U.S. Census or the Census’s American Community Survey.
         </p>
     </div><!--/container section-->
 
@@ -268,24 +268,25 @@
                     The Louisiana Cancer Maps project aims to provide data for geographies beyond county-level statistics to better serve cancer control, public health, and policy efforts.
                 </p>
                 <p>
-                    Louisiana Cancer Maps allows users to interactively map health data for Louisiana at a geographic level called zones, which are aggregates of census tracts. We have used a data-driven approach to define [REPLACE NUM_ZONES] zones for Louisiana, based on similar characteristics (poverty, urbanicity, racial/ethnic minority composition) and a minimum of 50,000 residents. These areas are generally smaller than county, but larger than census tract. Zones vary in population size from [REPLACE MINIMUM ZONE POPULATION] to [REPLACE MAXIMUM ZONE POPULATION] with the number of census tracts ranging from [REPLACE MINIMUM TRACTS PER ZONE] to [REPLACE MAXIMUM TRACTS PER ZONE].
+                    Louisiana Cancer Maps allows users to interactively map health data for Louisiana at a geographic level called zones, which are aggregates of census tracts. We have used a data-driven approach to define 71 zones for Louisiana, based on similar characteristics (poverty, urbanicity, racial/ethnic minority composition) and a minimum of 50,000 residents. These areas are generally smaller than county, but larger than census tract. Zones vary in population size from 50,889 to 102,680 with the number of census tracts ranging from 6 to 39.
                 </p>
                 <p>
-                    Louisiana Cancer Maps include 5-year and 10-year cancer incidence rates based on the most current data for the [REPLACE NUM_CANCER_SITES] most common cancer sites by sex and race/ethnicity ([CONFIRM RACE LIST] non-Hispanic White, non-Hispanic Black, non-Hispanic Asian/Pacific Islander, non-Hispanic American Indian/Alaska Native, and Hispanic. It also includes selected population demographic data based on 2010 Census and 2012-2016 American Community Survey data. Cancer incidence rates will be updated annually as more current data become available.
+                    Louisiana Cancer Maps include 5-year and 10-year cancer incidence rates based on the most current data for the 20 most common cancer sites by sex and race/ethnicity (non-Hispanic White, non-Hispanic Black). It also includes selected population demographic data based on 2010 Census and 2012-2016 American Community Survey data. Cancer incidence rates will be updated annually as more current data become available.
                 </p>
+                <div style="float:right;width:250px;margin:10px;">
+                    <img width="100%"" src="./static/lsu-health.png">
+                </div>
                 <p class="title">Project Team</p>
                 <p>
-                    <a target="_blank" href="[REPLACE REGISTRY WEBSITE]">Louisiana</a>
+                    <a target="_blank" href="https://sph.lsuhsc.edu/louisiana-tumor-registry/">Louisiana Tumor Registry</a>
                     <br/>
                     <a target="_blank" href="http://seer.cancer.gov">National Cancer Institute</a>
                     <br/>
                     <a target="_blank" href="https://www.westat.com/project/using-gis-interpret-spatial-context-and-cancer-risk">Westat, Inc.</a>
                 </p>
                 <p class="title">Funding</p>
+                    The Louisiana Tumor Registry is funded by both the Surveillance, Epidemiology, and End Results (SEER) Program of the National Cancer Institute and the National Program of Central Cancer Registries (NPCR) of the Centers for Disease Control and Prevention (CDC).
                 <p>
-                    <a target="_blank" href="[REPLACE FUNDING URL]">[REPLACE FUNDING SOURCE]</a>
-                    <br/>
-                    <a target="_blank" href="http://seer.cancer.gov">National Cancer Institute</a>
                 </p>
             </div><!--/tab-pane -->
             <div class="tab-pane container" id="learn-method">
@@ -309,7 +310,7 @@
                         </button>
                     </h2>
                     <div id="faq1" class="usa-accordion__content" hidden="">
-                        Census tract aggregation zones are developed based on combining adjacent census tracts on the basis of similarity in population sociodemographic characteristics: poverty, rurality, and racial/ethnic minority (i.e., non-White) composition. Zones are required to have a minimum population of 50,000. In total, there are [REPLACE NUM_ZONES] zones for Louisiana. Zones vary in population size from [REPLACE MINIMUM ZONE POPULATION] to [REPLACE MAXIMUM ZONE POPULATION] with the number of census tracts ranging from [REPLACE MINIMUM TRACTS PER ZONE] to [REPLACE MAXIMUM TRACTS PER ZONE]. These areas are generally smaller than a county, but larger than census tract to help provide additional options for understanding disease burden and better facilitate public health and policy planning.
+                        Census tract aggregation zones are developed based on combining adjacent census tracts on the basis of similarity in population sociodemographic characteristics: poverty, rurality, and racial/ethnic minority (i.e., non-White) composition. Zones are required to have a minimum population of 50,000. In total, there are 71 zones for Louisiana. Zones vary in population size from 50,889 to 102,680 with the number of census tracts ranging from 6 to 39. These areas are generally smaller than a county, but larger than census tract to help provide additional options for understanding disease burden and better facilitate public health and policy planning.
                     </div>
     
                     <h2 class="usa-accordion__heading">
@@ -333,11 +334,11 @@
     
                     <h2 class="usa-accordion__heading">
                         <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq3">
-                        What is the Louisiana Registry?
+                        What is the Louisiana Tumor Registry?
                         </button>
                     </h2>
                     <div id="faq3" class="usa-accordion__content" hidden="">
-                        [REPLACE ABOUT BLURB]
+                        The Louisiana Tumor Registry (LTR), a statewide population-based registry, compiles information to help guide policies for cancer prevention, early detection, diagnosis, treatment, prognosis, and survivorship. LTR data can help reduce the state’s cancer burden and disparities and can improve the survival and quality of life for all cancer patients.  Users of LTR data include cancer prevention programs, physicians and other medical practitioners, planning offices for healthcare facilities, the public health community, and researchers. These groups rely on timely, complete, and high-quality data from the Registry.
                     </div>
 
                     <h2 class="usa-accordion__heading">
@@ -347,7 +348,7 @@
                     </h2>
 
                     <div id="faq13" class="usa-accordion__content" hidden="">
-                        As we are reporting cancer incidence rates for small areas, the minimum reporting requirements allow us to report rates for the top [REPLACE NUM_CANCER_SITES] cancer sites.
+                        As we are reporting cancer incidence rates for small areas, the minimum reporting requirements allow us to report rates for the top 20 cancer sites.
                     </div>
     
                     <h2 class="usa-accordion__heading">
@@ -383,7 +384,7 @@
                         </button>
                     </h2>
                     <div id="faq7" class="usa-accordion__content" hidden="">
-                        To ensure confidentiality and stable statistical rates, cancer incidence rates are not reported if based on fewer than [REPLACE REPORTING MIN CASES] cancer cases.
+                        To ensure confidentiality and stable statistical rates, cancer incidence rates are not reported if based on fewer than 16 cancer cases.
                     </div>
                     <h2 class="usa-accordion__heading">
                         <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq9">
@@ -432,7 +433,7 @@
                     <b>Confidence Interval:</b> A statistical measure of the precision of the observed incidence rate. The lower confidence interval (LCI) and upper confidence interval (UCI) provide a range within which the true rate is thought to be with 95% confidence. Rates based on larger numbers of cases are subject to less variation.
                 </p>
                 <p>
-                    <b>Data Suppression:</b> To ensure confidentiality and stable statistical rates, cancer incidence rates are not reported if based on fewer than [REPLACE REPORTING MIN CASES] cancer cases.
+                    <b>Data Suppression:</b> To ensure confidentiality and stable statistical rates, cancer incidence rates are not reported if based on fewer than 16 cancer cases.
                 </p>
                 <p>
                     <b>Demographics:</b> Statistical data relating to the population and particular groups within it.
@@ -445,14 +446,14 @@
                     <span class="source">Source: US Census, 2010.</span>
                 </p>
                 <p>
-                    <b>Race/Ethnicity:</b> [REPLACE/CONFIRM LIST] Race/ethnicity is categorized as: All races/ethnicities, Non-Hispanic (NH) White, NH Black, Asian/Pacific Islander, or Hispanic. "All races" includes all of the above, as well as other and unknown race/ethnicity and American Indian/Alaska Native. The latter two groups are not reported separately due to small numbers for many cancer sites. 
+                    <b>Race/Ethnicity:</b> Race/ethnicity is categorized as: All races/ethnicities, Non-Hispanic (NH) White, NH Black. "All races" includes all cases regardless of race/ethnicity. 
                 </p>
                 <p>
-                    <b>Racial/Ethnic Composition:</b> Distribution of residents’ race/ethnicity (e.g., % Hispanic, % non-Hispanic White, % non-Hispanic Black, % non-Hispanic Asian/Pacific Islander).<br>
+                    <b>Racial/Ethnic Composition:</b> Distribution of residents’ race/ethnicity (e.g., % non-Hispanic White, % non-Hispanic Black).<br>
                     <span class="source">Source: US Census, 2010.</span>
                 </p>
                 <p>
-                    <b>Rural:</b> Percent of residents who reside in blocks that are designated as rural.<br>
+                    <b>% Rural:</b> Percent of residents who reside in blocks that are designated as rural.<br>
                     <span class="source">Source: US Census, 2010.</span>
                 </p>
                 <p>
@@ -474,7 +475,7 @@
                     This mapping tool is based on <a href="https://www.californiahealthmaps.org/">California Health Maps</a>, which is led by the Greater Bay Area Cancer Registry, University of California, San Francisco. Originally developed by <a href="https://www.greeninfo.org/" target="_blank">GreenInfo Network</a>,
                 </div>
                 <div class="col-sm-4 right small">
-                    [REPLACE CITATION INFO]
+                    Citation: LSU Health New Orleans School of Public Health. Louisiana Cancer Maps. URLtbd.org.
                 </div>
             </div>
         </div>
@@ -489,16 +490,16 @@
     -->
     <div id="tooltip_contents" tabindex="-1">
         <div aria-hidden="true" data-tooltip="race">
-            Race/ethnicity is categorized as: [CONFIRM RACE LIST] non-Hispanic White, non-Hispanic Black, non-Hispanic Asian/Pacific Islander, non-Hispanic American Indian/Alaska Native, and Hispanic. "All races" includes all of the above, as well as other and unknown race/ethnicity and American Indian/Alaska Native. The latter two groups are not reported separately due to small numbers for many cancer sites. 
+            Race/ethnicity is categorized as: non-Hispanic White, non-Hispanic Black, non-Hispanic Asian/Pacific Islander, non-Hispanic American Indian/Alaska Native, and Hispanic. "All races" includes all of the above, as well as other and unknown race/ethnicity and American Indian/Alaska Native. The latter two groups are not reported separately due to small numbers for many cancer sites. 
         </div>
         <div aria-hidden="true" data-tooltip="sex">
             Louisiana Cancer Maps defines this field as the sex or gender of the cancer patient, and codes available are male, female, intersex, transsexual, and transgender (natal male, natal female, or not specified). However, categories beyond male and female are not consistently coded by medical reporting facilities, and population estimates for gender categories beyond male and female are not available. Thus, cancer incidence data are reported for only male and female sex at this time.
         </div>
         <div aria-hidden="true" data-tooltip="cases">
-            To ensure confidentiality and stable statistical rates, cancer incidence rates are not reported if based on fewer than [REPLACE REPORTING MIN CASES] cancer cases.
+            To ensure confidentiality and stable statistical rates, cancer incidence rates are not reported if based on fewer than 16 cancer cases.
         </div>
         <div aria-hidden="true" data-tooltip="aair">
-            Age-Adjusted Incidence Rate (AAIR): Age-adjustment is a statistical method that allows comparisons of incidence rates to be made between populations with different age distributions. This is important since the incidence of most cancers increases with age. An age-adjusted cancer incidence (or death) rate is defined as the number of new cancers (or deaths) per 100,000 population that would occur in a certain period of time if that population had a ‘standard’ age distribution. In the [REPLACE STATE/REGISTRY] Cancer Maps, incidence rates are age-adjusted using the <a href="https://www.census.gov/census2000/states/us.html" target="_blank">U.S. 2000 Standard Population</a>.
+            Age-Adjusted Incidence Rate (AAIR): Age-adjustment is a statistical method that allows comparisons of incidence rates to be made between populations with different age distributions. This is important since the incidence of most cancers increases with age. An age-adjusted cancer incidence (or death) rate is defined as the number of new cancers (or deaths) per 100,000 population that would occur in a certain period of time if that population had a ‘standard’ age distribution. In the Louisiana Cancer Maps, incidence rates are age-adjusted using the <a href="https://www.census.gov/census2000/states/us.html" target="_blank">U.S. 2000 Standard Population</a>.
         </div>
         <div aria-hidden="true" data-tooltip="confidenceinterval">
               A statistical measure of the precision of the observed incidence rate. The lower confidence interval (LCI) and upper confidence interval (UCI) provide a range within which the true rate is thought to be with 95% confidence. Rates based on larger numbers of cases are subject to less variation.
@@ -530,7 +531,7 @@
                 <li>Use these data for health statistical reporting and analysis only.</li>
                 <li>Make no attempt to learn the identity of any person or establishment included in these data.</li>
                 <li>Make no attempt to link to cancer data released with other geographic areas.</li>
-                <li>Make no disclosure or other use of the identity of any person or establishment discovered inadvertently and advise the [Registry name] of any such discovery.</li>
+                <li>Make no disclosure or other use of the identity of any person or establishment discovered inadvertently and advise the Louisiana Tumor Registry of any such discovery.</li>
             </ul>
             <p>By clicking the button below, I agree to these terms of use.</p>
             <div class="center">
