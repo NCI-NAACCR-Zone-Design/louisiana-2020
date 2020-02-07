@@ -23,7 +23,7 @@ TEMP_CTASHPFILE = './tempfiles/CTAZones_Download.shp'
 
 # in the downloaded ZIP files, a CSV field will be a URL
 # to link back to this website zoomed to a CTA Zone
-WEBSITE_URL = "https://www.example.com"
+WEBSITE_URL = "https://nci-naaccr-zone-design.github.io/louisiana-2020/"
 
 # CTA Zones shapefile, and which fields to use from it
 INPUT_ZONESFILE = "./inputs/CTAZones.shp"

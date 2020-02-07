@@ -87,18 +87,6 @@ class DownloadableZipsMaker:
                     'Black_AAIR': float(row['B_AAIR']) if row['B_AAIR'] is not None else None,
                     'Black_LCI': float(row['B_LCI']) if row['B_LCI'] is not None else None,
                     'Black_UCI': float(row['B_UCI']) if row['B_UCI'] is not None else None,
-                    'Hispanic_PopTot': int(float(row['H_PopTot'])) if row['H_PopTot'] is not None else None,
-                    'Hispanic_AAIR': float(row['H_AAIR']) if row['H_AAIR'] is not None else None,
-                    'Hispanic_LCI': float(row['H_LCI']) if row['H_LCI'] is not None else None,
-                    'Hispanic_UCI': float(row['H_UCI']) if row['H_UCI'] is not None else None,
-                    'Asian_PopTot': int(float(row['API_PopTot'])) if row['API_PopTot'] is not None else None,
-                    'Asian_AAIR': float(row['API_AAIR']) if row['API_AAIR'] is not None else None,
-                    'Asian_LCI': float(row['API_LCI']) if row['API_LCI'] is not None else None,
-                    'Asian_UCI': float(row['API_UCI']) if row['API_UCI'] is not None else None,
-                    'AmerInd_PopTot': int(float(row['AIAN_PopTot'])) if row['AIAN_PopTot'] is not None else None,
-                    'AmerInd_AAIR': float(row['AIAN_AAIR']) if row['AIAN_AAIR'] is not None else None,
-                    'AmerInd_LCI': float(row['AIAN_LCI']) if row['AIAN_LCI'] is not None else None,
-                    'AmerInd_UCI': float(row['AIAN_UCI']) if row['AIAN_UCI'] is not None else None,
                 }
 
                 self.statsbycta[zoneid]['incidence'].append(thisdatarow)
@@ -117,9 +105,7 @@ class DownloadableZipsMaker:
                     'TotalPop': int(row['TotalPop']),
                     'Pct100Pov': float(row['Pct100Pov']),
                     'PctMinority': float(row['PctMinority']),
-                    'PctHispanic': float(row['PctHispanic']),
                     'PctBlackNH': float(row['PctBlackNH']),
-                    'PctAPINH': float(row['PctAPINH']),
                     'PctRural': float(row['PctRural']),
                 }
 
@@ -258,21 +244,11 @@ class DownloadableZipsMaker:
             'Black_AAIR',
             'Black_LCI',
             'Black_UCI',
-            'Hispanic_PopTot',
-            'Hispanic_AAIR',
-            'Hispanic_LCI',
-            'Hispanic_UCI',
-            'Asian_PopTot',
-            'Asian_AAIR',
-            'Asian_LCI',
-            'Asian_UCI',
             # demographics, which tend to vary a lot between setups
             'TotalPop',
             'Pct100Pov',
             'PctMinority',
-            'PctHispanic',
             'PctBlackNH',
-            'PctAPINH',
             'PctRural',
         ]
 
